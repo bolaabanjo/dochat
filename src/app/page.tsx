@@ -2,8 +2,8 @@ import { ChatInterface } from "@/components/chat-interface";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-black text-white lg:h-screen lg:overflow-hidden">
-      <main className="mx-auto flex h-full w-full flex-1 flex-col p-0 lg:p-6 xl:p-8">
+    <div className="flex min-h-screen flex-col outline-none bg-black text-white lg:h-screen lg:overflow-hidden">
+      <main className="mx-auto flex h-full w-full flex-1 flex-col outline-none p-0 lg:p-6 xl:p-8">
         <div className="grid h-full flex-1 gap-0 lg:grid-cols-[400px_1fr_400px] lg:gap-6 xl:grid-cols-[460px_1fr_460px] 2xl:grid-cols-[minmax(500px,1fr)_minmax(600px,2fr)_minmax(500px,1fr)]">
 
           {/* Left Column: Branding and Info */}
@@ -37,8 +37,8 @@ export default function Home() {
           </aside>
 
           {/* Center Column: Chat Interface */}
-          <section className="flex flex-col h-[100dvh] lg:h-auto lg:min-h-0 lg:overflow-hidden">
-            <div className="flex h-full flex-col bg-black lg:rounded-3xl lg:bg-zinc-900/30 lg:p-3 lg:shadow-xl lg:overflow-hidden">
+          <section className="flex flex-col outline-none h-[100dvh] lg:h-auto lg:min-h-0 lg:overflow-hidden">
+            <div className="flex h-full flex-col outline-none bg-black lg:rounded-3xl lg:bg-zinc-900/30 lg:p-3 lg:shadow-xl lg:overflow-hidden">
               <ChatInterface />
             </div>
           </section>
